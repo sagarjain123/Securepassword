@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h1>Add Credentails</h1>
 <form action="userCredential.do"method="post">
 <pre>
 Name:<input type="text" name="name"/>
@@ -15,6 +16,10 @@ UerId:<input type="text" name="userId">
 Password:<input type="text" name="password">
 Note:<textarea id="note" name="note"rows="2" cols="3"></textarea>
 </pre>
+<div>
+<input type="submit" name="Add">
+<input type="reset" name="clear">
+</div>
 </form>
 </body>
 </html>

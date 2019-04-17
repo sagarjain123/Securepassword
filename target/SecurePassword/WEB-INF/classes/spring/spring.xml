@@ -34,6 +34,7 @@ http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd">
 		<property name="annotatedClasses">
 			<list>
 				<value>com.xworks.securepassword.entity.UserEntity</value>
+				<value>com.xworks.securepassword.entity.UserCredentialEntity</value>
 			</list>
 		</property>
 	</bean>

@@ -30,7 +30,7 @@ public class SecurePhaseController {
 		logger.info("securePhase-->"+securePhase);
 		
 		service.securePhase(userName, securePhase);
-		return new ModelAndView("index.jsp");
+		return new ModelAndView("home.jsp");
 		
 	}
 }

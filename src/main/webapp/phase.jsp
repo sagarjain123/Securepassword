@@ -9,7 +9,7 @@
 <body bgcolor="red">
 <form action="securePhrase.do" method="get">
 <pre>
-userName:<input type="text" name="userName" value="${user}">
+userName:<input type="text" name="userName" value="${user}"readonly="readonly">
 Secure Phase:<input type="text" name="securePhase">
 <input type="submit" name="submit" value="submit">
 <input type="reset" name="clear" value="clear">

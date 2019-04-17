@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Login Successful${msg}</h1>
-
+<h1>${msg}</h1>
+<a href="UserCredential.jsp">Add</a>
 </body>
 </html>

@@ -5,5 +5,6 @@
 <a href="signUp.jsp">Signup</a>
 <a href="login.jsp">Login</a>
 <a href="ChangePassword.jsp">ChangePassword</a>
+<a href="phase.jsp">Setphase</a>
 </body>
 </html>

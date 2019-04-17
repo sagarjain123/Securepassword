@@ -1,5 +1,8 @@
 package com.xworks.securepassword.controller;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,18 +30,20 @@ public class LoginController
 	}
 	
 	@RequestMapping(value="login.do",method=RequestMethod.POST)
-	public ModelAndView loginController(LoginEntity loginEntity)
+	public ModelAndView loginController(LoginEntity loginEntity,HttpServletRequest request)throws Exception
 	{
 		
 		log.info("LoginController started" +loginEntity);
 		UserEntity userEntity=service.loginService(loginEntity);
 		if (userEntity!=null) 
 		{
-			return new ModelAndView("home.jsp", "msg", "Login Successful");
+			 HttpSession session=request.getSession(true);
+			 session.setAttribute("UserEntity",userEntity);
+			return new ModelAndView("phase.jsp", "user",userEntity.getUserName());
 		}
 		else
 		{
-			return new ModelAndView("login.jsp", "msg", "invalid credential");
+			return new ModelAndView("login.jsp", "msg", "invalid  login credential");
 		}
 		
 		

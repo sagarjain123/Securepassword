@@ -7,6 +7,8 @@ com\xworks\securepassword\controller\SignUpController.class
 com\xworks\securepassword\service\LoginService.class
 com\xworks\securepassword\util\EncryptionDecryption.class
 com\xworks\securepassword\util\PasswordGenerator.class
+com\xworks\securepassword\service\CredentialServiceImpl.class
+com\xworks\securepassword\service\CredentialService.class
 com\xworks\securepassword\repository\LoginRepositoryImpl.class
 com\xworks\securepassword\entity\UserEntity.class
 com\xworks\securepassword\repository\securePhaseRepositoryImpl.class
@@ -16,14 +18,17 @@ com\xworks\securepassword\repository\LoginRepository.class
 com\xworks\securepassword\controller\SecurePhaseController.class
 com\xworks\securepassword\service\SignUpService.class
 com\xworks\securepassword\repository\SignUpRepositoryImpl.class
+com\xworks\securepassword\repository\CredentialRepositoryImpl.class
 com\xworks\securepassword\repository\SecurePhaseRepository.class
 com\xworks\securepassword\controller\LoginController.class
 com\xworks\securepassword\service\SecurePhaseServiceImpl.class
 com\xworks\securepassword\util\MailServiceImpl.class
 com\xworks\securepassword\util\MailService.class
+com\xworks\securepassword\repository\CredentialRepository.class
 com\xworks\securepassword\entity\UserCredentialEntity.class
 com\xworks\securepassword\controller\ChangePasswordController.class
 com\xworks\securepassword\entity\ChangePasswordEntity.class
 com\xworks\securepassword\service\SecurePhaseService.class
 com\xworks\securepassword\service\SignUpServiceImpl.class
+com\xworks\securepassword\controller\CredentialController.class
 com\xworks\securepassword\entity\LoginEntity.class

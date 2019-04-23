@@ -1,6 +1,9 @@
 package com.xworks.securepassword.repository;
 
+import java.util.List;
+
 import org.hibernate.HibernateException;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -34,6 +37,15 @@ public class CredentialRepositoryImpl implements CredentialRepository {
 			he.getMessage();
 		}
 
+	}
+	public List<UserCredentialEntity> fetchAllCredentialRepository(String userName)
+	{
+		String hql="from UserCredentialEntity where loggedUser=:un";
+		Session session=factory.openSession();
+		Query query=session.createQuery(hql);
+		query.setParameter("un",userName);
+		 List<UserCredentialEntity> list=query.list();
+		return list;
 	}
 
 }

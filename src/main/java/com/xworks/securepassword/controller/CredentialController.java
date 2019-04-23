@@ -1,5 +1,7 @@
 package com.xworks.securepassword.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -35,6 +37,7 @@ public class CredentialController {
 		  UserEntity user=(UserEntity) session.getAttribute("UserEntity");
 		  credentialentity.setLoggedUser(user.getUserName());
 		  credentialService.credential(credentialentity);
-		  return new ModelAndView("home.jsp","msg","Data adde");
+		  List<UserCredentialEntity> list=credentialService.fetchAllCredentialService(user.getUserName());
+		  return new ModelAndView("home.jsp","msg","Data adde").addObject("UserEntity",user).addObject("list",list);
 	}
 }

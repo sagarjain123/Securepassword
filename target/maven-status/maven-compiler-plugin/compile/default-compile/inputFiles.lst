@@ -9,11 +9,15 @@ D:\SecurePassword\src\main\java\com\xworks\securepassword\controller\SecurePhase
 D:\SecurePassword\src\main\java\com\xworks\securepassword\service\LoginServiceImpl.java
 D:\SecurePassword\src\main\java\com\xworks\securepassword\util\EncryptionDecryption.java
 D:\SecurePassword\src\main\java\com\xworks\securepassword\repository\ChangePasswordRepositoryImpl.java
+D:\SecurePassword\src\main\java\com\xworks\securepassword\repository\CredentialRepositoryImpl.java
 D:\SecurePassword\src\main\java\com\xworks\securepassword\repository\securePhaseRepositoryImpl.java
 D:\SecurePassword\src\main\java\com\xworks\securepassword\util\MailServiceImpl.java
 D:\SecurePassword\src\main\java\com\xworks\securepassword\controller\SignUpController.java
 D:\SecurePassword\src\main\java\com\xworks\securepassword\controller\ChangePasswordController.java
+D:\SecurePassword\src\main\java\com\xworks\securepassword\service\CredentialServiceImpl.java
 D:\SecurePassword\src\main\java\com\xworks\securepassword\repository\LoginRepositoryImpl.java
+D:\SecurePassword\src\main\java\com\xworks\securepassword\controller\CredentialController.java
+D:\SecurePassword\src\main\java\com\xworks\securepassword\repository\CredentialRepository.java
 D:\SecurePassword\src\main\java\com\xworks\securepassword\entity\LoginEntity.java
 D:\SecurePassword\src\main\java\com\xworks\securepassword\entity\UserEntity.java
 D:\SecurePassword\src\main\java\com\xworks\securepassword\controller\CheckphaseController.java
@@ -24,6 +28,7 @@ D:\SecurePassword\src\main\java\com\xworks\securepassword\repository\SignUpRepos
 D:\SecurePassword\src\main\java\com\xworks\securepassword\util\PasswordGenerator.java
 D:\SecurePassword\src\main\java\com\xworks\securepassword\entity\ChangePasswordEntity.java
 D:\SecurePassword\src\main\java\com\xworks\securepassword\repository\SecurePhaseRepository.java
+D:\SecurePassword\src\main\java\com\xworks\securepassword\service\CredentialService.java
 D:\SecurePassword\src\main\java\com\xworks\securepassword\service\SignUpService.java
 D:\SecurePassword\src\main\java\com\xworks\securepassword\controller\LoginController.java
 D:\SecurePassword\src\main\java\com\xworks\securepassword\service\ChangePasswordImpl.java

@@ -38,7 +38,7 @@ public class LoginController
 		if (userEntity!=null) 
 		{
 			 HttpSession session=request.getSession(true);
-			 session.setAttribute("UserEntity",userEntity);
+			 session.setAttribute("userEntity",userEntity);
 			return new ModelAndView("phase.jsp", "user",userEntity.getUserName());
 		}
 		else

@@ -9,10 +9,11 @@
 <body bgcolor="blue">
 <form action="ChangePassword.do" method="post">
 <pre>
-userName :<input type="text" name="userName" value="${msg1}"><br>
+userName :<input type="text" name="userName" value="${msg}"><br>
 oldPassword :<input type="text" name="oldPassword"><br>
 newPassword :<input type="text" name="newPassword"><br>
 confirmPassword :<input type="text" name="confirmPassword"><br>
+SecurePhase:<input type="text" name="securePhase">
  ${user}
 </pre>
 <div>

@@ -7,4 +7,6 @@ public interface LoginRepository {
 	
 	public UserEntity loginRepository(LoginEntity loginEntity);
 
+	public UserEntity getByUsername(String username);
+
 }

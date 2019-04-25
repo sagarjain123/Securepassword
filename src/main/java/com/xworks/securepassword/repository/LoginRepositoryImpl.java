@@ -34,4 +34,13 @@ public class LoginRepositoryImpl implements LoginRepository {
       return userentity;
 	}
 
+	public UserEntity getByUsername(String username) {
+		Session session=factory.openSession();
+		  String hql="from UserEntity where userName=:user";
+		   Query query=session.createQuery(hql);
+		   query.setParameter("user",username);
+    UserEntity userentity=(UserEntity) query.uniqueResult();
+		return userentity;
+	}
+
 }

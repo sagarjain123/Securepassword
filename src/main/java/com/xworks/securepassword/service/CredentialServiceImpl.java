@@ -31,5 +31,10 @@ public class CredentialServiceImpl implements CredentialService {
 		List<UserCredentialEntity> list=credentialRepository.fetchAllCredentialRepository(userName);
 		return list;
 	}
+
+	public UserCredentialEntity editCredentialService(String name, String user) {
+		UserCredentialEntity credentialEntity=credentialRepository.editCredentialRepository(name, user);
+		return credentialEntity;
+	}
 	
     }

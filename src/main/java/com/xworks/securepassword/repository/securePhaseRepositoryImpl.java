@@ -24,11 +24,11 @@ public class securePhaseRepositoryImpl implements SecurePhaseRepository {
 	public void securePhase(String userName, String securePhase) {
 		Session session=factory.openSession();
 		Transaction tx=session.beginTransaction();
-		String hql="update UserEntity set securePhase=:phase,newUser=false where userName=:un";
+		String hql="update UserEntity user set user.securePhase=:phase , user.newUser=false where user.userName=:un";
 		 Query query=session.createQuery(hql);
 		 query.setParameter("phase",securePhase);
 		 query.setParameter("un",userName);
-         query.executeUpdate();
+         logger.info("answer is  {}",query.executeUpdate());
          tx.commit();
 	}
 

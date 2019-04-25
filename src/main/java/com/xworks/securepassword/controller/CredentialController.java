@@ -34,10 +34,20 @@ public class CredentialController {
 	{
 		logger.info("inside credential service"+credentialentity);
 		 HttpSession session=request.getSession(false);
-		  UserEntity user=(UserEntity) session.getAttribute("UserEntity");
+		  UserEntity user=(UserEntity) session.getAttribute("userEntity");
 		  credentialentity.setLoggedUser(user.getUserName());
 		  credentialService.credential(credentialentity);
 		  List<UserCredentialEntity> list=credentialService.fetchAllCredentialService(user.getUserName());
 		  return new ModelAndView("home.jsp","msg","Data adde").addObject("UserEntity",user).addObject("list",list);
+	}
+	
+	@RequestMapping(value="editCredential.do",method=RequestMethod.GET)
+	public ModelAndView editCredentialController(HttpServletRequest request)
+	{
+		 	String name=request.getParameter("name");
+		 	 String user=request.getParameter("user");
+		 	UserCredentialEntity credentialEntity=credentialService.editCredentialService(name, user);
+		 	logger.info("inside credential service"+credentialEntity);
+		 	return  new ModelAndView("EditCredential.jsp","cdto",credentialEntity); 
 	}
 }

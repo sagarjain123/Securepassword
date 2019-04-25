@@ -57,7 +57,7 @@ public class ChangePasswordController {
 			boolean result=password.changePassword(changePasswordEntity);
 			if(result)
 			{
-				return new ModelAndView("phase.jsp");
+				return new ModelAndView("phase.jsp").addObject("user",changePasswordEntity.getUserName());
 			}
 			else
 			{

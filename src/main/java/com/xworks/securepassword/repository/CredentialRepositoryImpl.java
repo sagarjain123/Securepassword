@@ -48,4 +48,14 @@ public class CredentialRepositoryImpl implements CredentialRepository {
 		return list;
 	}
 
+	public UserCredentialEntity editCredentialRepository(String name, String user) {
+		Session session=factory.openSession();
+		String hql="from UserCredentialEntity where name=:nn and loggedUser=:un";
+	 Query query=session.createQuery(hql);
+	 query.setParameter("nn",name);
+	 query.setParameter("un",user);
+	 UserCredentialEntity credentialEntity=(UserCredentialEntity) query.uniqueResult();
+		return credentialEntity;
+	}
+
 }

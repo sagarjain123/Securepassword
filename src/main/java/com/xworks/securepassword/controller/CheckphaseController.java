@@ -40,10 +40,11 @@ public class CheckphaseController {
 		  if(user.getSecurePhase().equals(securePhase))
 		  {
 			  List<UserCredentialEntity> list=service.fetchAllCredentialService(user.getUserName());
+			  System.out.println("list of data"+list);
 			  for(UserCredentialEntity credentialEntity:list){
 				  logger.info("Credentials"+credentialEntity);
 			  }
-			  return new ModelAndView("home.jsp","UserEntity","UserEntity").addObject("msg","logged in Successful").addObject("list", list);
+			  return new ModelAndView("home.jsp","UserEntity",user).addObject("msg","logged in Successful").addObject("list", list);
 		  }
 		  else
 		  {

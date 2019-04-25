@@ -7,5 +7,5 @@ import com.xworks.securepassword.entity.UserCredentialEntity;
 public interface CredentialRepository {
 	public void credential(UserCredentialEntity credentialEntity);
 	public List<UserCredentialEntity> fetchAllCredentialRepository(String userName);
-
+    public UserCredentialEntity editCredentialRepository(String name,String user);
 }

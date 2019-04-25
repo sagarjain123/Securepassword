@@ -8,5 +8,5 @@ public interface CredentialService {
 	
 	public void credential(UserCredentialEntity credentialentity);
 	public List<UserCredentialEntity> fetchAllCredentialService(String userName);
-
+    public UserCredentialEntity editCredentialService(String name,String user);
 }
